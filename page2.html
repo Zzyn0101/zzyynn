@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-N">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纹样</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .item {
+            width: calc(20% - 20px); 
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .item p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .item {
+                width: calc(50% - 20px); 
+            }
+        }
+        @media (max-width: 480px) {
+            .item {
+                width: calc(100% - 20px); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item">
+         <img src="D:\妞\a.jpg" alt="1">
+            <p>莲花纹</p >
+	   </div>
+       <div class="item">
+            <img src="妞/b.jpg" alt="2">
+            <p>梅花纹</p >
+   	   </div>
+       <div class="item">
+         <img src="妞/c.jpg" alt="1">
+            <p>中式祥云纹</p >
+	   </div>
+       <div class="item">
+            <img src="妞/d.jpg" alt="2">
+            <p>风筝纹</p >
+       </div>
+    </div>
+</body>
+</html>
